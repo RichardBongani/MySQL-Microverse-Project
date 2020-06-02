@@ -1,1 +1,1 @@
-# MySQL-Microverse-Project
+# SQL-Microverse-Project
