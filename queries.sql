@@ -43,3 +43,48 @@ SELECT name, population/area
   FROM world
  WHERE name IN ('China', 'Nigeria', 'France', 'Australia')
 */
+
+QUIZZ 2
+
+/****QUESTION_1*****/
+
+/*
+SELECT name
+  FROM world
+ WHERE name LIKE 'U%'
+*/
+
+/****QUESTION_2*****/
+/*
+SELECT population
+  FROM world
+ WHERE name = 'United Kingdom'
+*/
+
+/****QUESTION_3*****/
+/*
+'name' should be name
+*/
+
+/****QUESTION_4*****/
+/*
+Nauru    990
+*/
+
+/****QUESTION_5*****/
+/*
+SELECT name, population
+  FROM world
+ WHERE continent IN ('Europe', 'Asia')
+*/
+
+/****QUESTION_6*****/
+/*
+SELECT name FROM world
+ WHERE name IN ('Cuba', 'Togo')
+*/
+
+/****QUESTION_7*****/
+/*
+Brazil & Colombia
+*/
