@@ -143,3 +143,49 @@ Medicine     2
 Peace        1
 Physics      1
 */
+
+QUIZZ 4
+
+/****QUESTION_1*****/
+/*
+ SELECT region, name, population FROM bbc x WHERE population <= ALL (SELECT population FROM bbc y WHERE y.region=x.region AND population>0)
+*/
+
+/****QUESTION_2*****/
+/*
+ SELECT name,region,population FROM bbc x WHERE 50000 < ALL (SELECT population FROM bbc y WHERE x.region=y.region AND y.population>0)
+*/
+
+/****QUESTION_3*****/
+/*
+SELECT name, region FROM bbc x
+ WHERE population < ALL (SELECT population/3 FROM bbc y WHERE y.region = x.region AND y.name != x.name)
+*/
+
+/****QUESTION_4*****/
+/*
+France
+Germany
+Russia
+Turkey
+*/
+
+/****QUESTION_5*****/
+/*
+SELECT name FROM bbc
+ WHERE gdp > (SELECT MAX(gdp) FROM bbc WHERE region = 'Africa')
+*/
+
+/****QUESTION_5*****/
+/*
+SELECT name FROM bbc
+ WHERE population < (SELECT population FROM bbc WHERE name='Russia')
+   AND population > (SELECT population FROM bbc WHERE name='Denmark')
+*/
+
+/****QUESTION_6*****/
+/*
+Bangladesh
+India
+Pakistan
+*/
