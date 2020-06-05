@@ -88,3 +88,58 @@ SELECT name FROM world
 /*
 Brazil & Colombia
 */
+
+QUIZZ 3
+
+/****QUESTION_1*****/
+/*
+SELECT winner FROM nobel
+ WHERE winner LIKE 'C%' AND winner LIKE '%n'
+*/
+
+/****QUESTION_2*****/
+/*
+SELECT COUNT(subject) FROM nobel
+ WHERE subject = 'Chemistry'
+   AND yr BETWEEN 1950 and 1960
+*/
+
+/****QUESTION_3*****/
+/*
+SELECT COUNT(DISTINCT yr) FROM nobel
+ WHERE yr NOT IN (SELECT DISTINCT yr FROM nobel WHERE subject = 'Medicine')
+*/
+
+/****QUESTION_4*****/
+/*
+Medicine  Sir John Eccles
+Medicine  Sir Frank Macfarlane Burnet
+*/
+
+/****QUESTION_5*****/
+/*
+SELECT yr FROM nobel
+ WHERE yr NOT IN(SELECT yr 
+                   FROM nobel
+                 WHERE subject IN ('Chemistry','Physics'))
+*/
+
+/****QUESTION_6*****/
+/*
+SELECT DISTINCT yr
+  FROM nobel
+ WHERE subject='Medicine' 
+   AND yr NOT IN(SELECT yr FROM nobel 
+                  WHERE subject='Literature')
+   AND yr NOT IN (SELECT yr FROM nobel
+                   WHERE subject='Peace')
+*/
+
+/****QUESTION_7*****/
+/*
+Chemistry    1
+Literature   1
+Medicine     2
+Peace        1
+Physics      1
+*/
