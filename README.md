@@ -2,7 +2,7 @@
 
 # QUIZZES
 
-This is a quizz for SQL microverse project. 
+This is a quizz for SQL microverse project. In this quizz I also made use of Postgres.
 
 # QUIZZ LINK 
 
